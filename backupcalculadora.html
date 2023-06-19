@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Operacion de dos números</title>
+    <link rel="stylesheet" href="css/style2.css">
+
+    <script>
+      function sumar() {
+        var num1 = parseInt(document.getElementById("num1").value);
+        var num2 = parseInt(document.getElementById("num2").value);
+        var resultado = num1 + num2;
+        document.getElementById("resultado").innerHTML = resultado;
+      }
+      function restar() {
+        var num1 = parseInt(document.getElementById("num1").value);
+        var num2 = parseInt(document.getElementById("num2").value);
+        var resultado = num1 - num2;
+        document.getElementById("resultado").innerHTML = resultado;
+      }
+
+      function multiplicar() {
+        var num1 = parseInt(document.getElementById("num1").value);
+        var num2 = parseInt(document.getElementById("num2").value);
+        var resultado = num1 * num2;
+        document.getElementById("resultado").innerHTML = resultado;
+      }
+
+      function dividir() {
+        var num1 = parseInt(document.getElementById("num1").value);
+        var num2 = parseInt(document.getElementById("num2").value);
+        var resultado = num1 / num2;
+        document.getElementById("resultado").innerHTML = resultado;
+      }
+    
+      function potencia() {
+        var num1 = parseInt(document.getElementById("num1").value);
+        var num2 = parseInt(document.getElementById("num2").value);
+        var resultado = num1 / num2;
+        document.getElementById("resultado").innerHTML = resultado;
+      }
+
+      function calcularRaizCuadrada() {
+        var numero = document.getElementById("numero").value;
+        var resultado = Math.sqrt(numero);
+        document.getElementById("resultado la raiz cuadrada").innerHTML =
+          "La raíz cuadrada de " + numero + " es " + resultado;
+      }
+
+      function calcularPotencia() {
+        var base = document.getElementById("base").value;
+        var exponente = document.getElementById("exponente").value;
+        var resultado = Math.pow(base, exponente);
+        document.getElementById("resultado de la potencia es").innerHTML =
+          base + " elevado a " + exponente + " es igual a " + resultado;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Operaciones de dos números</h1>
+    <div>
+
+         <label class="lab" for="num1">Número 1:</label>
+         <input type="number" id="num1" /><br />
+         <label class="lab" for="num2">Número 2:</label>
+         <input type="number" id="num2" /><br />
+         <button onclick="sumar()">Sumar</button>
+         <button onclick="restar()">restar</button>
+         <button onclick="multiplicar()">multiplicar</button>
+         <button onclick="dividir()">divir</button>
+
+         <p>El resultado es: <span id="resultado"></span></p>
+    <br />
+    <p>operacion de raiz cuadrada</p>
+    <br />
+    </div>
+
+    <div>
+      <label class="lab" for="numero">Introduce un número:</label>
+      <input type="number" id="numero" />
+      <button onclick="calcularRaizCuadrada()">Calcular raíz cuadrada</button>
+      <br />
+      <p>El resultado de la raiz cuadra es: <span id="resultado la raiz cuadrada"></span></p>
+      <br>
+      <p>Operacion de potenciacion</p>
+      <br />
+
+      
+      <label class="lab" for="base">Introduce la base: </label>
+      <input class="margin" type="number" id="base" />
+      <br />
+      <label class="lab" for="exponente">Introduce el exponente:</label>
+      <input type="number" id="exponente" />
+      <button onclick="calcularPotencia()">Calcular potencia</button>
+
+      <br />
+
+      
+      <p>resultado de la potencia : <span id="resultado de la potencia es"></span></p>
+    </div>
+  </body>
+</html>

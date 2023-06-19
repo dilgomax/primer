@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Raíz cuadrada en HTML</title>
+	<script>
+		function calcularRaizCuadrada() {
+			var numero = document.getElementById("numero").value;
+			var resultado = Math.sqrt(numero);
+			document.getElementById("resultado").innerHTML = "La raíz cuadrada de " + numero + " es " + resultado;
+		}
+
+        function calcularPotencia() {
+			var base = document.getElementById("base").value;
+			var exponente = document.getElementById("exponente").value;
+			var resultado = Math.pow(base, exponente);
+			document.getElementById("resultado").innerHTML = base + " elevado a " + exponente + " es igual a " + resultado;
+		}
+	</script>
+</head>
+<body>
+	<label for="numero">Introduce un número:</label>
+	<input type="number" id="numero">
+	<button onclick="calcularRaizCuadrada()">Calcular raíz cuadrada</button>
+	<br>
+
+    <label for="base">Introduce la base:</label>
+	<input type="number" id="base">
+	<label for="exponente">Introduce el exponente:</label>
+	<input type="number" id="exponente">
+	<button onclick="calcularPotencia()">Calcular potencia</button>
+	<p id="resultado"></p>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(38, 11, 63);
+    font-size: 2rem;
+    
+}
+
+.h1{
+    color: rgb(224, 238, 32);
+    font-style: italic;
+}
+.plus{
+    color: rgb(255, 133, 34);
+    width:80%;
+}
+#div{
+    width: 70%;
+    margin-left: 150px;
+}
+.pa{
+    color: rgb(243, 206, 161);
+}
+
+#imp{
+    margin-left: 20px;
+}
+
+.label{
+    color: blue;
+    background-color: bisque;
+    font-size: 20px;
+}
